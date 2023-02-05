@@ -1,7 +1,44 @@
 .dot {
-    height: 25px;
-    width: 25px;
-    background-color: #bbb;
+    height: 50px;
+    width: 50px;
+    background-color: rgb(225, 225, 9);
     border-radius: 50%;
+    border: 2px solid white;
     display: inline-block;
+    margin-right: 10px;
   }
+
+.mycontainer {
+    height: 500px!important;
+    width: 900px!important;
+    background-color:midnightblue;
+    border-radius: 25px;
+    margin-top: 40px;
+    padding: 1px;
+}
+
+.heading {
+    height: 100px;
+    width: 500px;
+    background-color:white;
+    border-radius: 25px;
+    margin-top: 20px;
+    margin-left:20%;
+    margin-right:20%;
+    text-align: center;
+    padding-top: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+hr{
+    width:100%;
+    text-align:center;
+    margin-left:0;
+    background-color:rgb(248, 235, 4);
+    height:5px;
+    font-weight:bolder; 
+    color:rgb(248, 235, 4);
+    }
+
+
