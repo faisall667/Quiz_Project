@@ -22,13 +22,46 @@
         <hr>
         
         <div id="quiz_Box">
-            <div id = "questions"></div>
-            <div id = "answers"></div>
+            <div id = "question" class = "question">
+                Queston 1: What HTML stands for?
+            </div>
+                
+            <div id = "choices">
+                <div class="container text-center">
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <button class="btn btn-primary" type="button">Answer1</button>
+                      </div>
+                      <div class="col-lg-6">
+                        <button class="btn btn-primary" type="button">Answer2</button>
+                      </div> 
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-6">
+                          <button class="btn btn-primary" type="button">Answer3</button>
+                        </div>
+                        <div class="col-lg-6">
+                          <button class="btn btn-primary" type="button">Answer4</button>
+                        </div>   
+                      </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <button style="float:right; margin-top:30px; margin-right: 5%; width:100px" class="btn btn-success" type="button">Submit</button>
+                    </div>
+                    </div>
+
+            </div>
         </div>
         <div id = "next">         
         </div>
+        <hr>
     <footer>
-        <span id = "progress"></span>
+        <span id = "progress" style="color:white; font-size: 20px; margin-left:10px">
+            Question 1 out 10   
+        </span>
+        
         <span id = "timer"></span>
     </footer>
    
