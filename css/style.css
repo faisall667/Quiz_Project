@@ -6,6 +6,8 @@
     border: 2px solid white;
     display: inline-block;
     margin-right: 10px;
+    text-align:center;
+    padding-top: 10px;
   }
 
 .mycontainer {
@@ -59,4 +61,6 @@ button{
     width: 350px;
     margin-bottom: 20px;
 }
+
+
 
