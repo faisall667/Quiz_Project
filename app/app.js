@@ -79,8 +79,18 @@ function drawCircles (){
         circles.appendChild(newCircle); 
     }
  }
-
-
  drawCircles ()
+
+ let counter = 0;
+ let question = questionArray[counter].question;
+ document.getElementById("question").innerHTML = question
+ console.log(question);
+
+ function nextQuestion() {
+    counter++;
+    question = questionArray[counter].question;
+    document.getElementById("question").innerHTML = question
+}
+
 
 
