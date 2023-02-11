@@ -1,3 +1,4 @@
+
 let questionArray = [{
     question:"1. What does HTML stand for?",
     choice1:"Hyper Text Markup Language",
@@ -29,6 +30,7 @@ let questionArray = [{
     choice3:"Answer3",
     choice4:"Answer4"
 },
+
 {
     question:"5. What inline element?",
     choice1:"Answer1",
@@ -71,6 +73,8 @@ let questionArray = [{
     choice3:"Answer3",
     choice4:"Answer4"
 }
+
+
 ];
 
 function drawCircles (){
@@ -107,3 +111,79 @@ function drawCircles (){
 
 
 
+    
+
+function myFunction(){
+    runningQuestion ++
+    let question = questionArray[runningQuestion];
+    document.getElementById("question").innerHTML = question.question
+
+    choiceA.innerHTML = question.choiceA;
+    choiceB.innerHTML = question.choiceB;
+    choiceC.innerHTML = question.choiceC;
+    choiceD.innerHTML = question.choiceD;
+
+    console.log (question)
+}
+let selectedId = -1;
+var choices = document.getElementById("choices");
+choices.addEventListener('click', (event) => { // "event" here is the event parameter
+    const clickedEvent = event.target;
+    console.log(clickedEvent);
+  
+    if (clickedEvent.id == "A"){
+        document.getElementById(clickedEvent.id).style.backgroundColor = "yellow";
+        choiceB.style.backgroundColor = "white";
+        choiceC.style.backgroundColor = "white";
+        choiceD.style.backgroundColor = "white";
+        next.disabled = false;
+        selectedId = +clickedEvent.id;
+        //console.log("this is a current Id " + clickedEvent.id);
+       
+    }else if (clickedEvent.id == "B"){
+        document.getElementById(clickedEvent.id).style.backgroundColor = "yellow";
+        choiceA.style.backgroundColor = "white";
+        choiceC.style.backgroundColor = "white";
+        choiceD.style.backgroundColor = "white";
+        next.disabled = false;
+        selectedId = +clickedEvent.id;
+    } 
+    else if (clickedEvent.id == "C"){
+        document.getElementById(clickedEvent.id).style.backgroundColor = "yellow";
+        choiceA.style.backgroundColor = "white";
+        choiceB.style.backgroundColor = "white";
+        choiceD.style.backgroundColor = "white";
+        next.disabled = false;
+        selectedId = +clickedEvent.id;
+    } 
+    else if (clickedEvent.id == "D"){
+        document.getElementById(clickedEvent.id).style.backgroundColor = "yellow";
+        choiceA.style.backgroundColor = "white";
+        choiceB.style.backgroundColor = "white";
+        choiceC.style.backgroundColor = "white";
+        next.disabled = false;
+        selectedId = +clickedEvent.id;
+    } else if (clickedEvent.id == "next"){
+        //checkAnswer(clickedEvent.id);
+        console.log(selectedId);
+    }
+
+    
+})
+
+function checkAnswer(answer){
+    if(answer == question[runningQuestion].correct){
+        score++
+        answerIsCorrect();
+    }
+    else{
+        answerIsWrong();               
+    }
+}
+
+function answerIsCorrect(){
+    document.getElementById(runningQuestion).circles.style.backgroundColor = "#0f0";
+}
+function answerIsWrong(){
+    document.getElementById(runningQuestion).circles.style.backgroundColor = "#f00";
+}
