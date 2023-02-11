@@ -8,17 +8,19 @@ let questionArray = [{
 },
 {
     question:"2. What does CSS stand for?",
-    choice1:"Answer1",
-    choice2:"Answer2",
-    choice3:"Answer3",
-    choice4:"Answer4"
+    choice1:"Case Style Sheets",
+    choice2:"Case Sensitive Sheet",
+    choice3:"Cascading Style Sheets",
+    choice4:"Class Style",
+    //correct: "choice3"
 },
 {
     question:"3. What does JS stand for?",
-    choice1:"Answer1",
-    choice2:"Answer2",
-    choice3:"Answer3",
-    choice4:"Answer4"
+    choice1:"Jake Scope",
+    choice2:"Java Script",
+    choice3:"Java",
+    choice4:"Java Scripting"
+    //correct: "choice2"
 },
 {
     question:"4. What is block element?",
@@ -82,7 +84,7 @@ function drawCircles (){
  }
  drawCircles ()
 
- //const lastQuestion = question.length - 1;
+ 
  let counter = 0;
  let question = questionArray[counter];
  document.getElementById("question").innerHTML = question.question
