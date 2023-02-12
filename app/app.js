@@ -42,6 +42,7 @@ function drawCircles (){
     for (let counter = 1; counter <= questionArray.length; counter++){
         let newCircle = document.createElement("span");
         newCircle.classList.add("dot");
+        newCircle.id = "circle" + counter;
         newCircle.innerHTML = counter;
         circles.appendChild(newCircle); 
     }
@@ -55,6 +56,7 @@ const next = document.getElementById("next");
 
  drawCircles ()
 
+ //First question
 const lastQuestion = questionArray.length - 1;
 let runningQuestion = 0;
 let score = 0;
@@ -63,7 +65,8 @@ let score = 0;
     choiceA.innerHTML = question.choiceA;
     choiceB.innerHTML = question.choiceB;
     choiceC.innerHTML = question.choiceC;
-    choiceD.innerHTML = question.choiceD;
+    choiceD.innerHTML = question.choiceD; 
+    document.getElementById("circle" + (runningQuestion + 1)).style.backgroundColor = "pink";
     console.log (question)
    
 
@@ -78,7 +81,7 @@ function myFunction(){
     choiceB.innerHTML = question.choiceB;
     choiceC.innerHTML = question.choiceC;
     choiceD.innerHTML = question.choiceD;
-
+    document.getElementById()
     console.log (question)
 }
 let selectedId = -1;
