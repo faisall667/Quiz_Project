@@ -1,7 +1,78 @@
 .dot {
-    height: 25px;
-    width: 25px;
-    background-color: #bbb;
+    height: 50px;
+    width: 50px;
+    background-color: rgb(225, 225, 9);
     border-radius: 50%;
+    border: 2px solid white;
     display: inline-block;
+    margin-right: 15px;
+    text-align:center;
+    padding-top: 10px;
+    position:relative;
+    left: 130px;
   }
+  
+  
+
+.mycontainer {
+    height: 500px!important;
+    width: 900px!important;
+    background-color:midnightblue;
+    border-radius: 25px;
+    margin-top: 40px;
+    padding: 1px;
+}
+
+.heading {
+    height: 75px;
+    width: 500px;
+    background-color:white;
+    border-radius: 25px;
+    margin-top: 20px;
+    margin-left:20%;
+    margin-right:20%;
+    text-align: center;
+    padding-top: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+hr{
+    width:100%;
+    text-align:center;
+    margin-left:0;
+    background-color:white;
+    height:5px;
+    font-weight:bolder; 
+    color:white;
+    }
+
+.question{
+    color:white;
+    font-size: 20px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    margin-left: 10px;
+
+}
+
+.choices{
+    color:white;
+<<<<<<< Updated upstream
+    font-size: 20px;
+    /* padding-top: 5px;
+    padding-bottom: 15px;
+    margin: 10px; */
+=======
+    
+>>>>>>> Stashed changes
+
+}
+
+button{
+    width: 350px;
+    margin-bottom: 20px;
+}
+
+
+
