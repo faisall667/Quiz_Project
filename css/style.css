@@ -10,20 +10,17 @@
     padding-top: 10px;
     position:relative;
     left: 130px;
-  }
-  
-  
-
-.mycontainer {
+    }
+    
+    .mycontainer {
     height: 500px!important;
     width: 900px!important;
     background-color:midnightblue;
     border-radius: 25px;
     margin-top: 40px;
     padding: 1px;
-}
-
-.heading {
+    }
+    .heading {
     height: 75px;
     width: 500px;
     background-color:white;
@@ -34,45 +31,33 @@
     text-align: center;
     padding-top: 15px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-}
-
-hr{
+    }
+    hr{
     width:100%;
     text-align:center;
     margin-left:0;
     background-color:white;
     height:5px;
-    font-weight:bolder; 
+    font-weight:bolder;
     color:white;
     }
-
-.question{
+    .question{
     color:white;
     font-size: 20px;
     padding-top: 5px;
     padding-bottom: 15px;
     margin-left: 10px;
-
-}
-
-.choices{
+    
+    }
+    .choices{
     color:white;
-<<<<<<< Updated upstream
     font-size: 20px;
     /* padding-top: 5px;
     padding-bottom: 15px;
     margin: 10px; */
-=======
     
->>>>>>> Stashed changes
-
-}
-
-button{
+    }
+    button{
     width: 350px;
     margin-bottom: 20px;
-}
-
-
-
+    }
